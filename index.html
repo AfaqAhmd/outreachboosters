@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RevGrowth, Landing Page Clone</title>
+  <meta name="description" content="A clean, responsive landing page built with HTML, CSS, and JS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="./assets/favicon-obs.png" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Top nav -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="RevGrowth home">
+        <!-- <span class="brand-mark"></span> -->
+        <!-- <span class="brand-text">RevGrowth</span> -->
+         <img class="brand-logo" src="./assets/outreach-logo.webp" alt="RevGrowth logo">
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+        <span class="sr-only">Open menu</span>
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#how" class="nav-link">How it works</a>
+        <!-- <a href="#case-studies" class="nav-link">Case studies</a> -->
+        <a href="#newsletter" class="nav-link">Resources</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a class="btn btn-primary btn-sm" href="#cta">Work With Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <!-- <p class="kicker">RevGrowth helps B2B teams build predictable pipeline with full TAM coverage outbound.</p> -->
+
+          <h1 class="hero-title">
+            Message your Entire TAM<br/>
+            in 90 Days<span class="accent">__10X Your</span><br/>
+            <span class="accent">Qualified Pipeline</span>
+          </h1>
+
+          <p class="hero-subtitle">
+           Engineering hyper-scale outbound systems that reach every contact in your TAM quarterly, done-for-you. Launch in as little as 2 weeks.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#cta">Get your Free Outbound Campiagn</a>
+            <!-- <a class="btn btn-ghost" href="#how">See how it works</a> -->
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="container logo-wall" aria-label="Client logos">
+        <p class="logo-wall-title">Our Partners</p>
+        <div class="logo-row">
+          <span class="logo-chip"><img src="./assets/clay-img.png" alt=""></span>
+          <span class="logo-chip"><img src="./assets/heyreach.avif" alt=""></span>
+          <span class="logo-chip"><img src="./assets/smartlead.avif" alt=""></span>
+          <span class="logo-chip"><img src="./assets/prospeo-logo-new-CFnf-l7T.jpg" alt=""></span>
+        </div>
+      </div>
+      
+      <div class="container logo-wall" aria-label="Client logos">
+        <p class="logo-wall-title">Trusted by 50+ B2B Companies, SaaS, & Agencies</p>
+        <div class="logo-row">
+          <span class="logo-chip"><img src="./assets/nanonets.png" alt=""></span>
+          <span class="logo-chip"><img src="./assets/netnut.webp" alt=""></span>
+          <span class="logo-chip"><img src="./assets/uniq.webp" alt=""></span>
+          <span class="logo-chip"><img src="./assets/paminga.webp" alt=""></span>
+          <span class="logo-chip"><img src="./assets/apple-touch.webp" alt=""></span>
+          <span class="logo-chip"><img src="./assets/basic-capital.avif" alt=""></span>
+          <span class="logo-chip"><img src="./assets/climease.png" alt=""></span>
+          <span class="logo-chip"><img src="./assets/raina.jfif" alt=""></span>
+          <span class="logo-chip"><img src="./assets/milkshakemedia.jpeg" alt=""></span>
+          <span class="logo-chip"><img src="./assets/fl0.png" alt=""></span>
+          <span class="logo-chip"><img src="./assets/images-13.png" alt=""></span>
+          <span class="logo-chip"><img src="./assets/aquaflex.webp" alt=""></span>
+          <span class="logo-chip"><img src="./assets/webclip.jpg" alt=""></span>
+          <span class="logo-chip"><img src="./assets/popcorn.webp" alt=""></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="section" id="how">
+      <div class="container center">
+        <h1 class="section-title">How We're Helping B2B Companies <span class="accent">10X their <br> pipeline</span> With Full TAM Coverage Outbound</h1>
+        <!-- <p class="section-subtitle">
+          A single system that keeps targeting, messaging, and reporting aligned, so outbound becomes a repeatable motion.
+        </p> -->
+
+      <div class="video-card" role="button" tabindex="0" id="videoTrigger" aria-label="Play overview video">
+        <div class="video-surface" id="videoSurface">
+          <div class="video-play" aria-hidden="true">▶</div>
+
+          <div class="video-ui">
+            <div class="video-bar"></div>
+            <div class="video-avatar">RG</div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+        <div class="center mt-18">
+          <a class="btn btn-primary" href="#cta">Get your Free Outbound Campiagn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Why <span class="accent">RevGrowth?</span></h2>
+          <p class="section-subtitle">
+          We combine high-volume outbound with enterprise-grade infrastructure to maximize your pipeline velocity
+          </p>
+        </div>
+
+        <div class="grid-2">
+         <article class="card">
+            <div class="card-head">
+              <div class="card-icon">◈</div>
+              <h3 class="card-title">Full TAM coverage</h3>
+            </div>
+            <p class="card-text">Quarterly account coverage with strict suppression, volume controls, and warm domains, so you scale safely.</p>
+          </article>
+
+          <article class="card">
+             <div class="card-head">
+            <div class="card-icon">⚙</div>
+            <h3 class="card-title">Proprietary systems</h3>
+            </div>
+            <p class="card-text">Reusable workflows for enrichment, scoring, routing, and reporting, you get speed without chaos.</p>
+          </article>
+
+          <article class="card">
+             <div class="card-head">
+            <div class="card-icon">↗</div>
+            <h3 class="card-title">Speed to pipeline</h3>
+            </div>
+            <p class="card-text">Launch fast with proven sequences, then iterate weekly using response data, not vibes.</p>
+          </article>
+
+          <article class="card">
+             <div class="card-head">
+            <div class="card-icon">☑</div>
+            <h3 class="card-title">Dedicated experts</h3>
+            </div>
+            <p class="card-text">Operators who live in deliverability, targeting, and offer testing, your team stays focused on closing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case studies -->
+    <section class="section" id="case-studies">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title"> <span class="accent">Case studies</span></h2>
+          <p class="section-subtitle">See how we've helped 50+ B2B companies scale their outbound</p>
+        </div>
+
+        <h3 class="subhead">Client Interviews</h3>
+        <!-- <div class="grid-3">
+        <article class="media-card">
+          <div class="media-thumb js-video" data-video="https://www.youtube.com/embed/dUiHglgrCB4?si=iIdiLC2fQ5aAg2fO">
+            <div class="thumb-play">▶</div>
+            <div class="thumb-badge">Interview</div>
+          </div>
+          <h4 class="media-title">Founder, B2B SaaS, outbound rebuild</h4>
+          <p class="media-text">From inconsistent campaigns to weekly coverage, plus reply routing and reporting.</p>
+          <a class="link js-video-link" href="#" data-video="https://www.youtube.com/embed/dUiHglgrCB4?si=iIdiLC2fQ5aAg2fO">Watch highlights</a>
+        </article>
+
+
+
+          <article class="media-card">
+            <div class="media-thumb">
+              <div class="thumb-play">▶</div>
+              <div class="thumb-badge">Interview</div>
+            </div>
+            <h4 class="media-title">Ecommerce enablement, multi segment testing</h4>
+            <p class="media-text">Built segment specific offers, tracked meetings per segment, and scaled winners.</p>
+            <a class="link" href="#cta">Watch highlights</a>
+          </article>
+
+          <article class="media-card">
+            <div class="media-thumb">
+              <div class="thumb-play">▶</div>
+              <div class="thumb-badge">Interview</div>
+            </div>
+            <h4 class="media-title">Services business, pipeline stabilization</h4>
+            <p class="media-text">Improved deliverability, reduced noise, and increased qualified responses.</p>
+            <a class="link" href="#cta">Watch highlights</a>
+          </article>
+        </div> -->
+
+
+
+
+          <div class="grid-3">
+
+  <article class="media-card">
+    <div class="yt-embed">
+      <iframe
+        src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <h4 class="media-title">Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream</h4>
+    <p class="media-text">How we helped Nanonets (YC W17) secure 42 meetings with logos such as NASA, Samsung, and Airstream via building out a cold calling arm for their biz dev team.</p>
+    <ul class="media-text">
+      <li>Refined ICP targeting through direct feedback from calls</li>
+      <li>Iterated on cold call script messaging to boost results</li>
+      <li>125+ leads generated since June partnership</li>
+    </ul>
+    <a class="link" href="#cta">Expand to read more</a>
+  </article>
+
+  <article class="media-card">
+    <div class="yt-embed">
+      <iframe
+        src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <h4 class="media-title">Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream</h4>
+    <p class="media-text">How we helped Nanonets (YC W17) secure 42 meetings with logos such as NASA, Samsung, and Airstream via building out a cold calling arm for their biz dev team.</p>
+    <ul class="media-text">
+      <li>Refined ICP targeting through direct feedback from calls</li>
+      <li>Iterated on cold call script messaging to boost results</li>
+      <li>125+ leads generated since June partnership</li>
+    </ul>
+    <a class="link" href="#cta">Expand to read more</a>
+  </article>
+
+  <article class="media-card">
+    <div class="yt-embed">
+      <iframe
+        src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+   <h4 class="media-title">Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream</h4>
+    <p class="media-text">How we helped Nanonets (YC W17) secure 42 meetings with logos such as NASA, Samsung, and Airstream via building out a cold calling arm for their biz dev team.</p>
+    <ul class="media-text">
+      <li>Refined ICP targeting through direct feedback from calls</li>
+      <li>Iterated on cold call script messaging to boost results</li>
+      <li>125+ leads generated since June partnership</li>
+    </ul>
+    <a class="link" href="#cta">Expand to read more</a>
+  </article>
+
+</div>
+
+
+        <div class="stats-row">
+          <div class="stat-card">
+            <div class="stat-num">10,000+</div>
+            <div class="stat-label">Sales opportunities</div>
+            <p class="stat-label">Average increase in qualified leads within 90 days, with some clients seeing 3-5X growth.</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">$10M+</div>
+            <div class="stat-label">In sales pipeline</div>
+            <p class="stat-label">Average increase in qualified leads within 90 days, with some clients seeing 3-5X growth.</p>
+          </div>
+          <div class="stat-card">
+            <div class="stat-num">2x</div>
+            <div class="stat-label">Lead flow on average</div>
+            <p class="stat-label">Average increase in qualified leads within 90 days, with some clients seeing 3-5X growth.</p>
+          </div>
+        </div>
+
+        <!-- <h3 class="subhead mt-26">Campaign case studies</h3>
+        <div class="grid-3">
+          <article class="chart-card">
+            <div class="chart-top">
+              <span class="pill">Deliverability</span>
+              <span class="pill ghost">6 weeks</span>
+            </div>
+            <div class="chart-surface">
+              <svg viewBox="0 0 600 220" width="100%" height="100%" role="img" aria-label="Chart placeholder">
+                <path d="M20 170 L90 150 L150 165 L220 120 L280 130 L340 90 L420 110 L520 60" fill="none" stroke="currentColor" stroke-width="3"/>
+                <path d="M20 210 L20 20" stroke="currentColor" opacity="0.2"/>
+                <path d="M20 210 L580 210" stroke="currentColor" opacity="0.2"/>
+              </svg>
+            </div>
+            <p class="chart-text">Inbox placement stabilized, replies improved as volume increased safely.</p>
+          </article>
+
+          <article class="chart-card">
+            <div class="chart-top">
+              <span class="pill">Segmentation</span>
+              <span class="pill ghost">8 segments</span>
+            </div>
+            <div class="chart-surface">
+              <svg viewBox="0 0 600 220" width="100%" height="100%" role="img" aria-label="Chart placeholder">
+                <path d="M20 180 C140 120, 220 200, 320 140 C420 80, 500 120, 580 70" fill="none" stroke="currentColor" stroke-width="3"/>
+                <path d="M20 210 L20 20" stroke="currentColor" opacity="0.2"/>
+                <path d="M20 210 L580 210" stroke="currentColor" opacity="0.2"/>
+              </svg>
+            </div>
+            <p class="chart-text">Winners scaled, losers suppressed, replies got more qualified with tighter POV.</p>
+          </article>
+
+          <article class="chart-card">
+            <div class="chart-top">
+              <span class="pill">Pipeline</span>
+              <span class="pill ghost">Quarterly view</span>
+            </div>
+            <div class="chart-surface">
+              <svg viewBox="0 0 600 220" width="100%" height="100%" role="img" aria-label="Chart placeholder">
+                <path d="M20 190 L120 170 L220 150 L320 120 L420 110 L520 80 L580 60" fill="none" stroke="currentColor" stroke-width="3"/>
+                <path d="M20 210 L20 20" stroke="currentColor" opacity="0.2"/>
+                <path d="M20 210 L580 210" stroke="currentColor" opacity="0.2"/>
+              </svg>
+            </div>
+            <p class="chart-text">Coverage produced predictable meeting flow, then pipeline followed.</p>
+          </article>
+        </div> -->
+
+
+
+
+
+        <h3 class="subhead mt-26">Campaign Case Studies</h3>
+
+<div class="case-slider" id="caseSlider">
+  <button class="slider-btn prev" type="button" aria-label="Previous">‹</button>
+
+  <div class="case-track" tabindex="0" aria-label="Campaign case studies slider">
+    <!-- Card 1 -->
+    <article class="case-card"
+      data-title="Zainith Agency: 163 Leads Generated From 41,878 Contacted in 60 Days Targeting 7-Figure E-Commerce Brands"
+      data-body="1. UNLOCKING NEW MARKETS\n\nWe mapped TAM segments, built POV messaging, and ran controlled tests.\n\n2. GOING ALL IN ON WHAT WORKED\n\nWe scaled the winning segments, suppressed the rest, and refined offers weekly.\n\n3. ROUTING + REPORTING\n\nReply routing and weekly dashboards kept iteration disciplined.">
+
+      <div class="case-head">
+        <h4 class="case-title">Zainith Agency: 163 Leads Generated From 41,878 Contacted in 60 Days Targeting 7-Figure E-Commerce Brands</h4>
+      </div>
+
+      <div class="case-media">
+        <img src="./assets/slider-image.png" alt="Case study chart screenshot" draggable="false">
+      </div>
+
+      <button class="case-expand" type="button">Click to expand and read more →</button>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="case-card"
+      data-title="SMMA Platform: 195 Leads in 20 Days Targeting Real Estate Professionals with Social Media Creative Tool Offer"
+      data-body="1. SEGMENT CLARITY\n\nWe split TAM by role, market size, and intent.\n\n2. OFFER TESTING\n\nWe tested 3 angles, kept the winner, killed the rest.\n\n3. SCALE SAFELY\n\nVolume controls, suppression, and monitoring protected deliverability.">
+
+      <div class="case-head">
+        <h4 class="case-title">SMMA Platform: 195 Leads in 20 Days Targeting Real Estate Professionals with Social Media Creative Tool Offer</h4>
+      </div>
+
+      <div class="case-media">
+        <img src="./assets/slider-image.png" alt="Case study chart screenshot" draggable="false">
+      </div>
+
+      <button class="case-expand" type="button">Click to expand and read more →</button>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="case-card"
+      data-title="Popcorn Growth: 48 Leads Generated From 8556 Contacted Targeting Brands with $50k+ Influencer Marketing Offer"
+      data-body="1. UNLOCKING NEW MARKETS\n\n Most agencies pick one niche and stay there. We mapped adjacent markets that fit the offer.\n\nWe built segments, wrote per segment messaging, and launched controlled tests.\n\n2. GOING ALL IN ON WHAT WORKED\n\nWe scaled the segments that resonated, then tightened the offer to reduce switching friction.\n\n3. CONSISTENT REPLY FLOW\n\nRouting plus follow ups kept the pipeline predictable.">
+
+      <div class="case-head">
+        <h4 class="case-title">Popcorn Growth: 48 Leads Generated From 8556 Contacted Targeting Brands with $50k+ Influencer Marketing Offer</h4>
+      </div>
+
+      <div class="case-media">
+        <img src="./assets/slider-image.png" alt="Case study chart screenshot" draggable="false">
+      </div>
+
+      <button class="case-expand" type="button">Click to expand and read more →</button>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="case-card"
+      data-title="Another Campaign: example title here"
+      data-body="Put your long case study text here\n\nAdd more sections as needed.">
+
+      <div class="case-head">
+        <h4 class="case-title">Another Campaign: example title here</h4>
+      </div>
+
+      <div class="case-media">
+        <img src="./assets/slider-image.png" alt="Case study chart screenshot" draggable="false">
+      </div>
+
+      <button class="case-expand" type="button">Click to expand and read more →</button>
+    </article>
+  </div>
+
+  <button class="slider-btn next" type="button" aria-label="Next">›</button>
+</div>
+
+
+<!-- TEXT ONLY MODAL -->
+<div class="case-modal" id="caseModal" aria-hidden="true">
+  <div class="case-backdrop" data-close="true"></div>
+
+  <div class="case-dialog" role="dialog" aria-modal="true" aria-label="Case study">
+    <button class="case-close" type="button" data-close="true" aria-label="Close">✕</button>
+
+    <h3 class="case-modal-title" id="caseModalTitle"></h3>
+    <div class="case-modal-body" id="caseModalBody"></div>
+  </div>
+</div>
+
+       
+
+<!-- Modal -->
+<!-- TEXT ONLY MODAL, keep only this -->
+<div class="case-modal" id="caseModal" aria-hidden="true">
+  <div class="case-backdrop" data-close="true"></div>
+
+  <div class="case-dialog" role="dialog" aria-modal="true" aria-label="Case study">
+    <button class="case-close" type="button" data-close="true" aria-label="Close">✕</button>
+
+    <h3 class="case-modal-title" id="caseModalTitle"></h3>
+    <div class="case-modal-body" id="caseModalBody"></div>
+  </div>
+</div>
+
+
+
+        <div class="center mt-20">
+          <a class="btn btn-primary" href="#cta">Get Your Free Outbound Campaign</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section section-muted">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">How we scale your <span class="accent">outbound</span></h2>
+          <p class="section-subtitle">A proven process to reach 100% of your market with the right message at the right time.</p>
+        </div>
+
+        <ol class="steps">
+          <li class="step">
+            <div class="step-num">1</div>
+            <div class="step-body">
+              <h3 class="step-title">Data direction and TAM mapping</h3>
+              <p class="step-text">Define segments, rules, and exclusions, then build a list you can trust.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-num">2</div>
+            <div class="step-body">
+              <h3 class="step-title">Infrastructure setup</h3>
+              <p class="step-text">Domains, mailboxes, routing, tracking, and safety controls.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-num">3</div>
+            <div class="step-body">
+              <h3 class="step-title">Campaign creation and testing</h3>
+              <p class="step-text">Build sequences per segment, run clean tests, scale what wins.</p>
+            </div>
+          </li>
+          <li class="step">
+            <div class="step-num">4</div>
+            <div class="step-body">
+              <h3 class="step-title">Optimization and iteration</h3>
+              <p class="step-text">Weekly review of replies, bounces, and conversions, then adjust targeting and copy.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Best for -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head center">
+          <h2 class="section-title">Who We're <span class="accent">Best For </span></h2>
+          <p class="section-subtitle">We're not for everyone. We're built for companies ready to scale TAM coverage at a high level.</p>
+        </div>
+
+        <div class="fit-grid">
+          <div class="fit-card">
+            <h3 class="fit-title">Best fit</h3>
+            <ul class="fit-list ok">
+              <li>You have a clear ICP, or you are ready to define one with rules</li>
+              <li>You want continuous coverage, not one off campaigns</li>
+              <li>You can handle steady lead flow with a real sales motion</li>
+              <li>You care about deliverability and brand safety</li>
+            </ul>
+          </div>
+
+          <div class="fit-card">
+            <h3 class="fit-title">Not a fit</h3>
+            <ul class="fit-list no">
+              <li>You want instant results with no iteration</li>
+              <li>You do not have offer clarity, and you do not want to test offers</li>
+              <li>You cannot follow up on leads</li>
+              <li>You want mass blasting with no suppression rules</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="cta">
+      <div class="container cta-inner">
+        <h2 class="cta-title">Grow Your Pipeline Predictably with a <br> Team of <span class="accent">Trusted Outbound Experts </span></h2>
+        <p class="cta-text">Book a call today to see how RevGrowth can unlock your B2B company's pipeline potential to scale revenue consistently.</p>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="#top">Get your Free Outbound Campiagn</a>
+          <!-- <a class="btn btn-ghost" href="#faq">Read FAQ</a> -->
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <!---------------------------- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <!-- <p class="section-subtitle">Clear answers, no fluff.</p> -->
+        </div>
+
+        <div class="accordion" id="faqAccordion">
+  <details class="acc-item">
+    <summary class="acc-summary">
+      What makes RevGrowth different from other outbound, GTM agencies?
+      <span class="acc-chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </summary>
+
+    <div class="acc-panel">
+    <div class="acc-content">
+      We build an operating system, data rules, infrastructure, reporting, and iteration cadence, not just copy and sends.
+    </div>
+    </div>
+  </details>
+
+  <details class="acc-item">
+    <summary class="acc-summary">
+      How long does it take to see results?
+      <span class="acc-chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </summary>
+    <div class="acc-panel">
+    <div class="acc-content">
+      Most teams can launch within a couple weeks, then we iterate weekly based on performance data.
+    </div>
+    </div>
+  </details>
+
+  <details class="acc-item">
+    <summary class="acc-summary">
+      Is everything done for us?
+      <span class="acc-chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </summary>
+    <div class="acc-panel">
+    <div class="acc-content">
+      It can be, when you use suppression logic, volume controls, warm domains, and continuous monitoring.
+    </div>
+    </div>
+  </details>
+
+  <details class="acc-item">
+    <summary class="acc-summary">
+      What's your pricing?
+      <span class="acc-chevron" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="18" height="18">
+          <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </span>
+    </summary>
+    <div class="acc-panel">
+    <div class="acc-content">
+      Pricing depends on TAM size, number of segments, inbox infrastructure, and how many channels we run. We can share a range on a quick call.
+    </div>
+    </div>
+  </details>
+</div>
+
+      </div>
+    </section>
+
+
+
+
+    <!------------------ Playbooks -->
+    <section class="section section-muted" id="newsletter">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title"> <span class="accent">Playbooks & Workflows</span></h2>
+          <p class="section-subtitle">Watch real examples of AI-powered GTM workflows we've built.</p>
+        </div>
+
+        <div class="grid-3">
+
+         <article class="resource-card">
+           <h3 class="resource-title">AI Prompting Playbook For Developing Winning GTM Strategy</h3>
+           <p class="resource-text">How we're developing winning GTM strategy for our B2B clients just using a few AI prompts.</p>
+           <br>
+        <div class="resource-thumb yt-embed">
+          <iframe
+            src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
+            title="AI Prompting Playbook"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        </article>
+
+
+
+           <article class="resource-card">
+           <h3 class="resource-title">AI Prompting Playbook For Developing Winning GTM Strategy</h3>
+           <p class="resource-text">How we're developing winning GTM strategy for our B2B clients just using a few AI prompts.</p>
+           <br>
+        <div class="resource-thumb yt-embed">
+          <iframe
+            src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
+            title="AI Prompting Playbook"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+        </article>
+
+           <article class="resource-card">
+           <h3 class="resource-title">AI Prompting Playbook For Developing Winning GTM Strategy</h3>
+           <p class="resource-text">How we're developing winning GTM strategy for our B2B clients just using a few AI prompts.</p>
+           <br>
+        <div class="resource-thumb yt-embed">
+          <iframe
+            src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
+            title="AI Prompting Playbook"
+            frameborder="0"
+            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+            </div>
+            </article>
+            
+        </div>
+
+        <div class="newsletter">
+          <div class="newsletter-copy">
+            <h3 class="newsletter-title">Sign-up to Our <span class="accent">Outbound Newsletter</span></h3>
+            <p class="newsletter-text">Join our newsletter and get the latest insights, tips, and updates delivered straight to your inbox</p>
+          </div>
+
+          <form class="newsletter-form" id="newsletterForm">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@company.com" required />
+            <button class="btn btn-primary btn-sm" type="submit">Subscribe</button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="footer" id="footer">
+  <div class="container">
+
+    <div class="footer-top">
+      <!-- Left -->
+      <div class="footer-left">
+        <div class="brand footer-brand">
+          <span class="brand-text">RevGrowth</span>
+        </div>
+
+        <p class="footer-text">
+          Message your entire TAM quarterly with hyper-scale outbound systems. Launch in as little as 2 weeks.
+        </p>
+
+        <div class="footer-actions">
+          <a class="btn btn-primary footer-cta" href="#cta">
+            Book Intro Call <span class="cta-arrow">→</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Middle -->
+      <div class="footer-mid">
+        <h4 class="footer-title">Quick Links</h4>
+        <nav class="footer-links">
+          <a href="#top">Home</a>
+          <a href="#how">How it Works</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#faq">FAQ</a>
+          <a href="#privacy">Privacy Policy</a>
+          <a href="#terms">Terms of Service</a>
+        </nav>
+      </div>
+
+      <!-- Right -->
+      <div class="footer-right">
+        <h4 class="footer-title">Connect</h4>
+
+        <div class="footer-social">
+          <a class="social-ico" href="#" aria-label="LinkedIn">in</a>
+          <a class="social-ico" href="#" aria-label="X">x</a>
+          <a class="social-ico" href="#" aria-label="YouTube">▶</a>
+        </div>
+
+        <div class="footer-badges">
+          <img src="./assets/heyreach.avif" alt="Partner badge" />
+          <img src="./assets/smartlead.avif" alt="Partner badge" />
+          <img src="./assets/outboundsync.avif" alt="Partner badge" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-line"></div>
+
+    <div class="footer-bottom-centered">
+      © <span id="year"></span> RevGrowth. All rights reserved.
+    </div>
+
+  </div>
+</footer>
+
+  </main>
+
+  <!-- Video modal -->
+  <div class="modal" id="videoModal" aria-hidden="true" role="dialog" aria-label="Video modal">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="modalClose" aria-label="Close video">✕</button>
+      <div class="modal-body">
+        <div class="modal-video">
+          <div class="modal-placeholder">
+            <p class="modal-title">Overview video placeholder</p>
+            <p class="modal-subtitle">Swap this with a real embed, YouTube, Vimeo, Loom, etc.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <div class="video-modal" id="videoModal" aria-hidden="true">
+  <div class="video-backdrop" data-close="true"></div>
+
+  <div class="video-dialog" role="dialog" aria-modal="true" aria-label="Video player">
+    <button class="video-close" type="button" data-close="true" aria-label="Close">✕</button>
+
+    <div class="video-wrap">
+      <iframe
+        id="videoFrame"
+        width="560"
+        height="315"
+        src=""
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<script>
+
+(() => {
+  const trigger = document.getElementById("videoTrigger");
+  const surface = document.getElementById("videoSurface");
+
+  if (!trigger || !surface) return;
+
+  let mounted = false;
+
+  function mountAndPlay(){
+    if (mounted) return;
+
+    mounted = true;
+ surface.style.backgroundImage = "none";
+    // remove play overlay + UI
+    surface.innerHTML = `
+      <video controls autoplay playsinline preload="metadata">
+        <source src="./assets/Sunset.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    `;
+
+    const vid = surface.querySelector("video");
+    // Force play (some browsers block autoplay without user gesture, but click counts)
+    vid.play().catch(() => {});
+  }
+
+  trigger.addEventListener("click", mountAndPlay);
+
+  // keyboard accessibility (Enter/Space)
+  trigger.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      mountAndPlay();
+    }
+  });
+})();
+
+
+  // -------------
+(() => {
+  // Slider
+  const slider = document.getElementById("caseSlider");
+  if (slider) {
+    const track = slider.querySelector(".case-track");
+    const prev = slider.querySelector(".slider-btn.prev");
+    const next = slider.querySelector(".slider-btn.next");
+
+    function scrollByCard(dir) {
+      const card = track.querySelector(".case-card");
+      if (!card) return;
+      const style = getComputedStyle(track);
+      const gap = parseFloat(style.columnGap || style.gap || "28") || 28;
+      const step = card.getBoundingClientRect().width + gap;
+      track.scrollBy({ left: dir * step, behavior: "smooth" });
+    }
+
+    prev?.addEventListener("click", () => scrollByCard(-1));
+    next?.addEventListener("click", () => scrollByCard(1));
+  }
+
+  // Modal (TEXT ONLY)
+  const modal = document.getElementById("caseModal");
+  const titleEl = document.getElementById("caseModalTitle");
+  const bodyEl = document.getElementById("caseModalBody");
+  
+function escapeHtml(str){
+  return str
+    .replace(/&/g,"&amp;")
+    .replace(/</g,"&lt;")
+    .replace(/>/g,"&gt;");
+}
+
+function formatCaseBody(raw){
+  // convert literal "\n" into real newlines
+  raw = (raw || "").replace(/\\n/g, "\n");
+
+  let safe = escapeHtml(raw);
+
+  const blocks = safe.split(/\n{2,}/).map(b => b.trim()).filter(Boolean);
+
+  return blocks.map(b => {
+    if (/^\d+\.\s+[A-Z0-9 ,+&-]{3,}$/.test(b)) return `<h4 class="case-h">${b}</h4>`;
+    if (/^[A-Z][A-Z0-9 ,+&-]{5,}$/.test(b)) return `<h4 class="case-h">${b}</h4>`;
+
+    b = b.replace(/\n/g, "<br>");
+    return `<p class="case-p">${b}</p>`;
+  }).join("");
+}
+
+
+  function openModal(title, body) {
+    if (!modal) return;
+    titleEl.textContent = title || "";
+   bodyEl.innerHTML = formatCaseBody(body || "");
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal() {
+    if (!modal) return;
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  // Only open modal when clicking the button
+  document.addEventListener("click", (e) => {
+    const expandBtn = e.target.closest(".case-expand");
+    if (expandBtn) {
+      const card = expandBtn.closest(".case-card");
+      if (!card) return;
+      openModal(card.getAttribute("data-title"), card.getAttribute("data-body"));
+      return;
+    }
+
+    if (e.target.matches("[data-close='true']")) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+  });
+})();
+
+
+
+
+// ----
+
+(() => {
+  const root = document.getElementById("faqAccordion");
+  if (!root) return;
+
+  const items = Array.from(root.querySelectorAll("details.acc-item"));
+  const DURATION = 280; // keep close to your CSS
+
+  let isBusy = false;
+
+  function getPanel(details) {
+    return details.querySelector(".acc-panel");
+  }
+
+  function waitTransition(panel) {
+    return new Promise((resolve) => {
+      let done = false;
+
+      const finish = () => {
+        if (done) return;
+        done = true;
+        panel.removeEventListener("transitionend", onEnd);
+        resolve();
+      };
+
+      const onEnd = (e) => {
+        if (e.propertyName === "height") finish();
+      };
+
+      panel.addEventListener("transitionend", onEnd);
+
+      // fallback in case transitionend doesn't fire
+      setTimeout(finish, DURATION + 60);
+    });
+  }
+
+  async function open(details) {
+    const panel = getPanel(details);
+    if (!panel) return;
+
+    details.open = true;
+
+    // start closed
+    panel.style.height = "0px";
+    panel.getBoundingClientRect(); // force reflow
+
+    // measure target height
+    const target = panel.scrollHeight;
+
+    // animate open
+    panel.style.height = target + "px";
+    await waitTransition(panel);
+
+    // allow natural height after animation
+    panel.style.height = "auto";
+  }
+
+  async function close(details) {
+    const panel = getPanel(details);
+    if (!panel) return;
+
+    // if it's auto, lock to px first
+    const start = panel.scrollHeight;
+    panel.style.height = start + "px";
+    panel.getBoundingClientRect(); // force reflow
+
+    // animate close
+    panel.style.height = "0px";
+    await waitTransition(panel);
+
+    details.open = false;
+  }
+
+  // init panels so closed ones are truly height 0
+  items.forEach((d) => {
+    const panel = getPanel(d);
+    if (!panel) return;
+    panel.style.height = d.open ? "auto" : "0px";
+  });
+
+  items.forEach((details) => {
+    const summary = details.querySelector("summary");
+    if (!summary) return;
+
+    summary.addEventListener("click", async (e) => {
+      e.preventDefault();
+      if (isBusy) return;
+
+      isBusy = true;
+
+      const currentlyOpen = items.find((d) => d.open);
+      const clickedIsOpen = details.open;
+
+      // If clicking the open one, just close it
+      if (clickedIsOpen) {
+        await close(details);
+        isBusy = false;
+        return;
+      }
+
+      // Close currently open first, smoothly
+      if (currentlyOpen && currentlyOpen !== details) {
+        await close(currentlyOpen);
+      }
+
+      // Then open the clicked one
+      await open(details);
+
+      isBusy = false;
+    });
+  });
+
+  // keep open panel height correct on resize (only if not auto)
+  window.addEventListener("resize", () => {
+    const openDetails = items.find((d) => d.open);
+    if (!openDetails) return;
+    const panel = getPanel(openDetails);
+    if (!panel) return;
+    if (panel.style.height === "auto") return;
+    panel.style.height = panel.scrollHeight + "px";
+  });
+})();
+
+
+</script>
+  <script src="app.js"></script>
+</body>
+</html>
