@@ -896,6 +896,8 @@ input:focus{
   margin-left: 10px;
   display: inline-block;
   transform: translateY(-1px);
+  font-size: 1.6em;   
+  line-height: 1;
 }
 
 /* Links column */
