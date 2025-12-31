@@ -182,7 +182,37 @@
        
           <div class="grid-3">
 
-  <article class="media-card">
+  <article class="media-card" 
+  data-title="Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream"
+  data-body="Longer writeup goes here.\n\nAdd sections, context, results, what changed, what we learned.\n\nYou can add multiple paragraphs like this."
+  >
+    <div class="yt-embed">
+      <iframe
+        src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </div>
+
+    <h4 class="media-title">Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream</h4>
+    
+    <p class="media-text">How we helped Nanonets (YC W17) secure 42 meetings with logos such as NASA, Samsung, and Airstream via building out a cold calling arm for their biz dev team.</p>
+    <ul class="media-text">
+      <li>Refined ICP targeting through direct feedback from calls</li>
+      <li>Iterated on cold call script messaging to boost results</li>
+      <li>125+ leads generated since June partnership</li>
+    </ul>
+    <a class="link media-expand">Expand to read more</a>
+  </article>
+
+  <article class="media-card"
+  data-title="Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream"
+  data-body="Longer writeup goes here.\n\nAdd sections, context, results, what changed, what we learned.\n\nYou can add multiple paragraphs like this."
+  >
     <div class="yt-embed">
       <iframe
         src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
@@ -202,33 +232,13 @@
       <li>Iterated on cold call script messaging to boost results</li>
       <li>125+ leads generated since June partnership</li>
     </ul>
-    <a class="link" href="#cta">Expand to read more</a>
+     <a class="link media-expand">Expand to read more</a>
   </article>
 
-  <article class="media-card">
-    <div class="yt-embed">
-      <iframe
-        src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        loading="lazy">
-      </iframe>
-    </div>
-
-    <h4 class="media-title">Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream</h4>
-    <p class="media-text">How we helped Nanonets (YC W17) secure 42 meetings with logos such as NASA, Samsung, and Airstream via building out a cold calling arm for their biz dev team.</p>
-    <ul class="media-text">
-      <li>Refined ICP targeting through direct feedback from calls</li>
-      <li>Iterated on cold call script messaging to boost results</li>
-      <li>125+ leads generated since June partnership</li>
-    </ul>
-    <a class="link" href="#cta">Expand to read more</a>
-  </article>
-
-  <article class="media-card">
+  <article class="media-card"
+  data-title="Nanonets: 42 Meetings with logos like NASA, Samsung & Airstream"
+  data-body="Longer writeup goes here.\n\nAdd sections, context, results, what changed, what we learned.\n\nYou can add multiple paragraphs like this."
+  >
     <div class="yt-embed">
       <iframe
         src="https://www.youtube.com/embed/dUiHglgrCB4?rel=0&modestbranding=1"
@@ -248,8 +258,24 @@
       <li>Iterated on cold call script messaging to boost results</li>
       <li>125+ leads generated since June partnership</li>
     </ul>
-    <a class="link" href="#cta">Expand to read more</a>
+     <a class="link media-expand">Expand to read more</a>
   </article>
+
+
+
+
+
+  <div class="media-modal" id="mediaModal" aria-hidden="true">
+  <div class="media-backdrop" data-media-close="true"></div>
+
+  <div class="media-dialog" role="dialog" aria-modal="true" aria-label="Video case study">
+    <button class="media-close" type="button" data-media-close="true" aria-label="Close">✕</button>
+
+    <h3 class="media-modal-title" id="mediaModalTitle"></h3>
+    <div class="media-modal-body" id="mediaModalBody"></div>
+  </div>
+</div>
+
 
 </div>
 
@@ -718,7 +744,69 @@
 
 
 
+<script>
+  (() => {
+  const modal = document.getElementById("mediaModal");
+  const titleEl = document.getElementById("mediaModalTitle");
+  const bodyEl = document.getElementById("mediaModalBody");
 
+  if (!modal || !titleEl || !bodyEl) return;
+
+  function escapeHtml(str){
+    return (str || "")
+      .replace(/&/g,"&amp;")
+      .replace(/</g,"&lt;")
+      .replace(/>/g,"&gt;");
+  }
+
+  function formatBody(raw){
+    // convert literal "\n" into real newlines
+    raw = (raw || "").replace(/\\n/g, "\n");
+    const safe = escapeHtml(raw);
+
+    const blocks = safe.split(/\n{2,}/).map(b => b.trim()).filter(Boolean);
+
+    return blocks.map(b => {
+      // detect headings like "Results" or "What changed" or "1. TITLE"
+      if (/^\d+\.\s+[A-Z0-9 ,+&-]{3,}$/.test(b)) return `<div class="m-h">${b}</div>`;
+      if (/^[A-Z][A-Z0-9 ,+&-]{3,}$/.test(b) && b.length <= 40) return `<div class="m-h">${b}</div>`;
+
+      return `<p class="m-p">${b.replace(/\n/g,"<br>")}</p>`;
+    }).join("");
+  }
+
+  function openModal(title, body){
+    titleEl.textContent = title || "";
+    bodyEl.innerHTML = formatBody(body || "");
+    modal.classList.add("is-open");
+    modal.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeModal(){
+    modal.classList.remove("is-open");
+    modal.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  document.addEventListener("click", (e) => {
+    const btn = e.target.closest(".media-expand");
+    if (btn){
+      const card = btn.closest(".media-card");
+      if (!card) return;
+      openModal(card.getAttribute("data-title"), card.getAttribute("data-body"));
+      return;
+    }
+
+    if (e.target.matches("[data-media-close='true']")) closeModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeModal();
+  });
+})();
+
+</script>
   <script src="app.js"></script>
 </body>
 </html>
